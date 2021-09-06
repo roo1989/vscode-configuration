@@ -1,0 +1,22 @@
+{
+  "workbench.colorTheme": "Just Black",
+  "editor.snippetSuggestions": "top",
+  "emmet.showAbbreviationSuggestions": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "workbench.iconTheme": "vscode-icons",   
+  "code-runner.executorMap": {
+      "javascript": "node",
+      "python": "python",
+      "go": "go run",
+      "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "code-runner.clearPreviousOutput": true,
+  "editor.accessibilitySupport": "on",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.minimap.enabled": false,
+  "files.exclude": { "**/.*": true },
+}
