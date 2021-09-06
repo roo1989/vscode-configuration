@@ -1,5 +1,8 @@
 {
   "workbench.colorTheme": "Just Black",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.fontLigatures": true,
   "editor.snippetSuggestions": "top",
   "emmet.showAbbreviationSuggestions": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -19,4 +22,40 @@
   "editor.detectIndentation": true,
   "editor.minimap.enabled": false,
   "files.exclude": { "**/.*": true },
+  "editor.fontFamily": "Operator Mono",
+  "workbench.editor.showTabs": false,
+  "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            //following will be in italic (=FlottFlott)
+            "comment",
+            "entity.name.type.class", //class names
+            "keyword", //import, export, return…
+            "constant", //String, Number, Boolean…, this, super
+            "storage.modifier", //static keyword
+            "storage.type.class", //class keyword
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            //following will be excluded from italics (VSCode has some defaults for italics)
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json"
+          ],
+          "settings": {
+            "fontStyle": ""
+          },
+        }
+      ]
+    },
+    "editor.fontWeight": "500",
+    "editor.fontSize": 13  
 }
