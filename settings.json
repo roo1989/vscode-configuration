@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Just Black",
+  "workbench.colorTheme": "Palenight (Mild Contrast)",
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
   "editor.fontLigatures": true,
@@ -7,55 +7,69 @@
   "emmet.showAbbreviationSuggestions": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": false,
-  "workbench.iconTheme": "vscode-icons",   
+  "workbench.iconTheme": "vscode-icons",
   "code-runner.executorMap": {
-      "javascript": "node",
-      "python": "python",
-      "go": "go run",
-      "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
-      "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-      "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    "javascript": "node",
+    "python": "python",
+    "go": "go run",
+    "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
   "code-runner.clearPreviousOutput": true,
   "editor.accessibilitySupport": "on",
   "editor.tabSize": 2,
   "editor.detectIndentation": true,
   "editor.minimap.enabled": false,
-  "files.exclude": { "**/.*": true },
+  "files.exclude": {
+    "**/.*": true
+  },
   "editor.fontFamily": "Operator Mono",
   "workbench.editor.showTabs": false,
   "editor.tokenColorCustomizations": {
-      "textMateRules": [
-        {
-          "scope": [
-            //following will be in italic (=FlottFlott)
-            "comment",
-            "entity.name.type.class", //class names
-            "keyword", //import, export, return…
-            "constant", //String, Number, Boolean…, this, super
-            "storage.modifier", //static keyword
-            "storage.type.class", //class keyword
-          ],
-          "settings": {
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": [
-            //following will be excluded from italics (VSCode has some defaults for italics)
-            "invalid",
-            "keyword.operator",
-            "constant.numeric.css",
-            "keyword.other.unit.px.css",
-            "constant.numeric.decimal.js",
-            "constant.numeric.json"
-          ],
-          "settings": {
-            "fontStyle": ""
-          },
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class",
+          "keyword",
+          "constant",
+          "storage.modifier",
+          "storage.type.class"
+        ],
+        "settings": {
+          "fontStyle": "italic"
         }
-      ]
-    },
-    "editor.fontWeight": "500",
-    "editor.fontSize": 13  
+      },
+      {
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.fontWeight": "500",
+  "editor.fontSize": 13,
+  "editor.linkedEditing": true,
+  "tabnine.experimentalAutoImports": true,
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "node_modules_electron": true,
+    "dev": true,
+    "dist": true
+  },
+  "advancedNewFile.showInformationMessages": true,
+  "advancedNewFile.convenienceOptions": [
+    "last",
+    "current",
+    "root"
+  ]
 }
